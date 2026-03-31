@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+  
+}
+body{
+    background-color: rgb(214, 179, 246);
+}
+nav {
+    background-color:  rgb(123, 38, 208);
+    color: white;
+    height: 55px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.gamecontainer{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+   font-family: "Over the Rainbow", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  
+
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  
+}
+
+.box{
+    border: 2px solid black;
+font-size: 8vw;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Over the Rainbow", cursive;
+
+}
+.box:hover{
+   background-color:  rgb(222, 205, 227);
+   cursor: pointer;
+}
+.gameinfo{
+ padding: 0 32px;
+    font-family: "Baloo Da 2", cursive;
+ font-size: 2rem;
+ color: rgb(97, 53, 138);
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+    
+}
+#reset{
+    margin-top: 10px;
+    padding: 1px 18px;
+    background-color: rgb(210, 179, 240);
+    color: rgb(92, 35, 148);
+     font-family: "Baloo Da 2", cursive;
+     border-radius: 10px;
+     cursor: pointer;
+     font-weight: bold;
+     font-size: medium;
+}
+#reset:active{
+ box-shadow: 0 4px 6px rgb(112, 60, 162);
+}
+.info{
+    font-size: 1rem;
+     font-family: "Knewave", system-ui;
+     color: rgba(45, 3, 67, 0.636);
+}
+@media screen and (max-width: 800px) {
+  .gamecontainer {
+    flex-wrap: wrap;
+  }
+  .gameinfo{
+    margin-top: 35px;
+  
+  }
+  .gameinfo h1{
+    font-size: 1.5rem;
+  }
+  .container{
+    grid-template-columns: repeat(3, 20vw);
+  grid-template-rows: repeat(3, 20vw);
+  
+  }
+}
